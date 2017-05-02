@@ -1,0 +1,19 @@
+syntax: glob
+
+build/*
+object/*
+docs/*
+.vs/*
+
+**Debug/*
+**x64/*
+**.ilk
+**.opensdf
+**.sdf
+
+nsight_profiler.cfg
+
+export.bin
+
+*.suo
+*.user

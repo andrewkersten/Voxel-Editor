@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{45413227-19F0-4BFA-A001-CE17E317E834}</ProjectGuid>
+    <RootNamespace>vedit</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>./include;C:/lib/glew3.1.1/inc;C:/lib/glew/inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:/lib/glfw3.1.1/lib;C:/lib/glew/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glew32s.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>./include;./include/glk;C:\Library\C\glfw\3.1.2\WIN64\include;C:\Library\C\glew\1.13.0\include;C:\Library\C\anttweakbar\116\include;C:\Library\C\freetype\freetype-2.6.2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Library\C\glfw\3.1.2\WIN64\lib-vc2015;C:\Library\C\glew\1.13.0\lib\Release\x64;C:\Library\C\anttweakbar\116\lib;C:\Library\C\freetype\freetype-2.6.2\objs\vc2010\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glew32s.lib;glfw3.lib;AntTweakBar64.lib;freetype262.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>./include;C:/lib/glew3.1.1/inc;C:/lib/glew/inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:/lib/glfw3.1.1/lib;C:/lib/glew/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glew32s.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>./include;./include/glk;C:\Library\C\glfw\3.1.2\WIN64\include;C:\Library\C\glew\1.13.0\include;C:\Library\C\anttweakbar\116\include;C:\Library\C\freetype\freetype-2.6.2\include;C:\Library\C\freetype\freetype-2.3.5\include\freetype2;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;GLEW_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>C:\Library\C\glfw\3.1.2\WIN64\lib-vc2015;C:\Library\C\glew\1.13.0\lib\Release\x64;C:\Library\C\anttweakbar\116\lib;C:\Library\C\freetype\freetype-2.6.2\objs\vc2010\x64</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glew32s.lib;glfw3.lib;AntTweakBar64.lib;freetype262.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="source\camera.c" />
+    <ClCompile Include="source\color.c" />
+    <ClCompile Include="source\colorbar.c" />
+    <ClCompile Include="source\darray.c" />
+    <ClCompile Include="source\editor.c" />
+    <ClCompile Include="source\engine.c" />
+    <ClCompile Include="source\GLKIdentity.c" />
+    <ClCompile Include="source\GLKMatrix4.c" />
+    <ClCompile Include="source\ground.c" />
+    <ClCompile Include="source\keyboard.c" />
+    <ClCompile Include="source\lodepng.c" />
+    <ClCompile Include="source\main.c" />
+    <ClCompile Include="source\mouse.c" />
+    <ClCompile Include="source\panel.c" />
+    <ClCompile Include="source\rect.c" />
+    <ClCompile Include="source\renderer_gl.c" />
+    <ClCompile Include="source\shader.c" />
+    <ClCompile Include="source\shader_gl.c" />
+    <ClCompile Include="source\text.c" />
+    <ClCompile Include="source\texture.c" />
+    <ClCompile Include="source\texture_gl.c" />
+    <ClCompile Include="source\transform.c" />
+    <ClCompile Include="source\volume.c" />
+    <ClCompile Include="source\window.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\camera.h" />
+    <ClInclude Include="include\color.h" />
+    <ClInclude Include="include\colorbar.h" />
+    <ClInclude Include="include\darray.h" />
+    <ClInclude Include="include\editor.h" />
+    <ClInclude Include="include\engine.h" />
+    <ClInclude Include="include\export.h" />
+    <ClInclude Include="include\glk\GLKMath.h" />
+    <ClInclude Include="include\glk\GLKMathTypes.h" />
+    <ClInclude Include="include\glk\GLKMathUtils.h" />
+    <ClInclude Include="include\glk\GLKMatrix3.h" />
+    <ClInclude Include="include\glk\GLKMatrix4.h" />
+    <ClInclude Include="include\glk\GLKQuaternion.h" />
+    <ClInclude Include="include\glk\GLKVector2.h" />
+    <ClInclude Include="include\glk\GLKVector3.h" />
+    <ClInclude Include="include\glk\GLKVector4.h" />
+    <ClInclude Include="include\panel.h" />
+    <ClInclude Include="include\rect.h" />
+    <ClInclude Include="include\renderer.h" />
+    <ClInclude Include="include\renderer_gl.h" />
+    <ClInclude Include="include\shader_gl.h" />
+    <ClInclude Include="include\text.h" />
+    <ClInclude Include="include\ground.h" />
+    <ClInclude Include="include\texture.h" />
+    <ClInclude Include="include\texture_gl.h" />
+    <ClInclude Include="include\vertex.h" />
+    <ClInclude Include="include\vertex_gl.h" />
+    <ClInclude Include="include\volume.h" />
+    <ClInclude Include="include\keyboard.h" />
+    <ClInclude Include="include\lodepng.h" />
+    <ClInclude Include="include\mouse.h" />
+    <ClInclude Include="include\shader.h" />
+    <ClInclude Include="include\transform.h" />
+    <ClInclude Include="include\utility.h" />
+    <ClInclude Include="include\window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="default.doxygen" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
